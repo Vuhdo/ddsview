@@ -1,106 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Quellcodedateien">
+    <Filter Include="Source files">
       <UniqueIdentifier>{fb192959-eee8-4d2f-a855-7bf82ac74ca7}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
-    <Filter Include="Header-Dateien">
+    <Filter Include="Header files">
       <UniqueIdentifier>{036cdc87-469c-4656-9297-e779b3c67a7c}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Ressourcendateien">
+    <Filter Include="Resource files">
       <UniqueIdentifier>{b882dda5-359b-4b48-b5ad-5089894a2beb}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ErrorBox.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="file.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="ilstuff.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="image.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="InputBox.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="oledrag.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="registerfiletypes.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="rotbmp.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="saveimage.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="WinMain.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="wintoolbar.cpp">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc">
-      <Filter>Quellcodedateien</Filter>
+      <Filter>Source files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ErrorBox.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="file.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="GetLongPathName.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="globalstuff.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="ilstuff.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="image.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="InputBox.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="oledrag.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="registerfiletypes.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="rotbmp.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="saveimage.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="wintoolbar.h">
-      <Filter>Header-Dateien</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="augekerstin.ico">
-      <Filter>Ressourcendateien</Filter>
+      <Filter>Resource files</Filter>
     </Image>
     <Image Include="augenbaer.ico">
-      <Filter>Ressourcendateien</Filter>
+      <Filter>Resource files</Filter>
     </Image>
   </ItemGroup>
 </Project>
