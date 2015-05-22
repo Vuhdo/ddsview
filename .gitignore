@@ -1,0 +1,13 @@
+*.user
+*.ncb
+*.suo
+*.tlog
+*.ipch
+*.pdb
+*.aps
+*.bak
+/bin/Debug
+/bin/*.exe
+*.log
+*.sdf
+*.ilk
