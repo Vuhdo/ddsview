@@ -8,6 +8,8 @@
 *.bak
 /bin/Debug
 /bin/*.exe
+/bin/Release
 *.log
 *.sdf
 *.ilk
+*.opensdf

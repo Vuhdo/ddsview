@@ -46,8 +46,8 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\Release\</OutDir>
-    <IntDir>.\Release\</IntDir>
+    <OutDir>bin\</OutDir>
+    <IntDir>bin\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -107,18 +107,15 @@
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>DevIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;IL_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
-      <PrecompiledHeaderOutputFile>.\Release\ddsview.pch</PrecompiledHeaderOutputFile>
-      <ObjectFileName>.\Release\</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AssemblerListingLocation>bin\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>bin\Release\ddsview.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>bin\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>bin\Release\</ProgramDataBaseFileName>
     </ClCompile>
-    <PostBuildEvent>
-      <Command>copy release\ddsview.exe "c:\path\ddsview.exe"</Command>
-    </PostBuildEvent>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <TypeLibraryName>.\Release\ddsview.tlb</TypeLibraryName>
+      <TypeLibraryName>bin\Release\ddsview.tlb</TypeLibraryName>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
     </Midl>
@@ -128,12 +125,12 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Release\ddsview.bsc</OutputFile>
+      <OutputFile>bin\Release\ddsview.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>.\Release\ddsview.exe</OutputFile>
+      <OutputFile>bin\ddsview.exe</OutputFile>
       <AdditionalLibraryDirectories>DevIL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>devil.lib;ilu.lib;ilut.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
