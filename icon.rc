@@ -1,0 +1,25 @@
+#include "resource.h"
+#include <winuser.h>
+
+IDI_ICON_APP ICON DISCARDABLE "augenbaer.ico"
+IDI_ICON_FILES ICON DISCARDABLE "augekerstin.ico"
+
+IDB_TOOLBAR BITMAP "toolbar.bmp"
+
+IDD_REGISTER_FILETYPES DIALOG DISCARDABLE  0, 0, 246, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register/Unregister File Types"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 65, 73, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 130, 73, 50, 14
+    PUSHBUTTON      "Select &All", SELECT_ALL_ID, 32, 15, 50, 14
+    PUSHBUTTON      "Select &None", SELECT_NONE_ID, 95, 15, 50, 14
+    PUSHBUTTON      "Select &Free", SELECT_FREE_ID, 158, 15, 50, 14
+    CONTROL         "Add ""DeepBrowse with ddsview"" to context menu of all folders",
+                    ADD_RECBROWSE_ID, "Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16, 35, 210, 10
+    CONTROL         "Overwrite Image&&Fax Display as Default Image Viewer (needed on WinXP without Service Pack 2)",
+                    OVERWRITE_FAX_ID, "Button",BS_AUTOCHECKBOX | WS_TABSTOP | BS_TOP | BS_MULTILINE,
+                    16, 50, 210, 20
+END
