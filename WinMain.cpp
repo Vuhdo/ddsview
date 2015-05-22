@@ -2128,7 +2128,7 @@ LRESULT CALLBACK eventListener(HWND hWnd, UINT msg, WPARAM wP, LPARAM lP)
 
         s += "\n\nI'm using the following DevIL libraries:\n";
 
-        char* t = ilGetString(IL_VERSION_NUM);
+        const char* t = ilGetString(IL_VERSION_NUM);
         if(t != NULL)
         {
           s += t;
