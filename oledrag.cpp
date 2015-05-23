@@ -75,7 +75,7 @@ HRESULT STDMETHODCALLTYPE FileDataObject::GetData(FORMATETC* pformatetcIn, STGME
 
   //count total length of all file names
   int totalLength = 0;
-  for(int i = 0; i < _files.size(); ++i)
+  for(size_t i = 0; i < _files.size(); ++i)
     totalLength += _files[i].length() + 1; //add one for \0-char
 
   int size = sizeof(DROPFILES) + totalLength + 1;
@@ -86,7 +86,7 @@ HRESULT STDMETHODCALLTYPE FileDataObject::GetData(FORMATETC* pformatetcIn, STGME
   p += sizeof(DROPFILES);
 
   //copy filenames
-  for(int j = 0; j < _files.size(); ++j)
+  for(size_t j = 0; j < _files.size(); ++j)
   {
     memcpy(p, _files[j].data(), _files[j].size());
     p += _files[j].size() + 1;

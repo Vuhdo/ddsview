@@ -232,7 +232,7 @@ bool traverse(TraverseInfo& info, const string& name1, const string& name2,
         return false;
 
       //search subdirs
-      for(int j = 0; j < subDirs.size(); ++j)
+      for(size_t j = 0; j < subDirs.size(); ++j)
       {
         if(!traverse(info, "", "", dir, subDirs[j]))
           return false;
@@ -267,7 +267,7 @@ bool traverse(TraverseInfo& info, const string& name1, const string& name2,
 
         dirIndex = getIndex(dir, subDirs, currSubDir);
 
-        for(int j = dirIndex; j < subDirs.size(); ++j)
+        for(size_t j = dirIndex; j < subDirs.size(); ++j)
         {
           if(!traverse(info, "", "", dir, subDirs[j]))
             return false;
