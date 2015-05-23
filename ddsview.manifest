@@ -1,0 +1,34 @@
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity
+                type="win32"
+                name="Microsoft.Windows.Common-Controls"
+                version="6.0.0.0"
+                processorArchitecture="*"
+                publicKeyToken="6595b64144ccf1df"
+                language='*'
+            />
+        </dependentAssembly>
+    </dependency>
+
+    <!-- name version and platform -->
+    <assemblyIdentity type="win32" processorArchitecture="*" version="1.0.0.0" name="ddsview">
+    </assemblyIdentity>
+
+    <!-- description -->
+    <description>ddsview: tiny image viewer (www.amnoid.de/ddsview/)</description>
+
+    <!-- trustInfo as required by G4W -->
+    <!-- there is a bug in mt.exe for VS2005 SP1 which barks at requestedprivileges, but we just ignore it -->
+    <!-- https://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=237720 -->
+    <ms_asmv2:trustInfo xmlns:ms_asmv2="urn:schemas-microsoft-com:asm.v2">
+        <ms_asmv2:security>
+            <ms_asmv2:requestedPrivileges>
+                <ms_asmv2:requestedExecutionLevel level="asInvoker" uiAccess="false" />
+            </ms_asmv2:requestedPrivileges>
+        </ms_asmv2:security>
+    </ms_asmv2:trustInfo>
+
+</assembly>
