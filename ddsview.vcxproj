@@ -41,9 +41,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>bin</OutDir>
+    <OutDir>bin\</OutDir>
     <IntDir>bin\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>ddsview_dbg</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>bin\</OutDir>
