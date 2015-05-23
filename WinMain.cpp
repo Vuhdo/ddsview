@@ -33,13 +33,6 @@ using namespace std;
 #include "il/ilu.h"
 #include "il/ilut.h"
 
-//TODO!: evil hack!!! these functions should
-//be exported by devil in its headers...
-extern "C" {
-ILAPI ILenum ILAPIENTRY ilTypeFromExt(const ILstring FileName);
-ILAPI ILenum ILAPIENTRY ilDetermineType(const ILstring FileName);
-}
-
 #include "globalstuff.h"
 
 #include "ErrorBox.h"
@@ -66,7 +59,7 @@ const string CLIPBOARD_IMAGE = "--@CLIPBOARD IMAGE";
 //OS DEPENDENT
 
 const char* CLASS_NAME = ".dds viewer window class";
-const char* WINDOW_TITLE = "www.amnoid.de/ddsview/ v.663 (press h for controls)";
+const char* WINDOW_TITLE = "www.amnoid.de/ddsview/ v.663b (press h for controls)";
 const int WINDOW_STYLE =  WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN;
 HINSTANCE g_hInst;
 HWND g_hWnd = NULL, g_statusbar = NULL, g_toolbar = NULL;
