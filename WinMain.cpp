@@ -1,3 +1,5 @@
+#include "Precompiled.h"
+
 /*
 This fastens up drawing:
 No doublebuffer
@@ -20,7 +22,7 @@ using namespace std;
 #include "GetLongPathName.h" //GetLongPathName() for win95
 
 //win95 has no multimonitor functions build in -
-//but luckily the win32 SDK takes care of that
+//but luckily the win32 SDK takes care of that				
 //and fakes them for us if we tell it to
 //(if you don't have this file in your win32 SDK,
 //grab multimon.h from the net or update your SDK)

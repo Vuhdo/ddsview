@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "registerfiletypes.h"
 
 #include <shlobj.h>

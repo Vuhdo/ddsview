@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "rotbmp.h"
 
 HBITMAP rotateHBitmapL(HBITMAP hBm)

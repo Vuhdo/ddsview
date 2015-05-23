@@ -48,6 +48,9 @@
     <ClCompile Include="wintoolbar.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc">
@@ -92,6 +95,9 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="wintoolbar.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Precompiled.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "wintoolbar.h"
 
 #include <commctrl.h>

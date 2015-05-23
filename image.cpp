@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "Image.h"
 using namespace std;
 

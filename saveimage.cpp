@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "saveimage.h"
 #include <windows.h>
 

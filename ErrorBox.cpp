@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "ErrorBox.h"
 #include <windows.h>
 #include <stdio.h> //sprintf

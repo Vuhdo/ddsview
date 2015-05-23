@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "file.h"
 
 #include "image.h" //isSupported()

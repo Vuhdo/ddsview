@@ -50,6 +50,7 @@
     <OutDir>bin\</OutDir>
     <IntDir>bin\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>ddsview</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -68,6 +69,8 @@
       <ObjectFileName>bin\Debug\</ObjectFileName>
       <ProgramDataBaseFileName>bin\Debug\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
     </ClCompile>
     <PostBuildEvent>
       <Command>
@@ -112,6 +115,8 @@
       <PrecompiledHeaderOutputFile>bin\Release\ddsview.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>bin\Release\</ObjectFileName>
       <ProgramDataBaseFileName>bin\Release\</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -143,6 +148,10 @@
     <ClCompile Include="image.cpp" />
     <ClCompile Include="InputBox.cpp" />
     <ClCompile Include="oledrag.cpp" />
+    <ClCompile Include="Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="registerfiletypes.cpp" />
     <ClCompile Include="rotbmp.cpp" />
     <ClCompile Include="saveimage.cpp" />
@@ -161,6 +170,7 @@
     <ClInclude Include="image.h" />
     <ClInclude Include="InputBox.h" />
     <ClInclude Include="oledrag.h" />
+    <ClInclude Include="Precompiled.h" />
     <ClInclude Include="registerfiletypes.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="rotbmp.h" />

@@ -1,3 +1,4 @@
+#include "Precompiled.h"
 #include "ilstuff.h"
 
 //*sigh* DevIL's exported API is not expressive enough...

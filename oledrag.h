@@ -1,12 +1,6 @@
 #ifndef NICO_OLEDRAG_H
 #define NICO_OLEDRAG_H NICO_OLEDRAG_H
 
-#include <windows.h>
-#include <shlobj.h> //DROPFILES
-
-#include <vector>
-#include <string>
-
 class DefaultDropSource : public IDropSource
 {
  public:
